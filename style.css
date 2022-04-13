@@ -1,109 +1,173 @@
 body {
-  margin: 0;
-}
-header {
-  background-color: #373738;
-  padding: 15px;
-}
-header ul {
-  float: right;
-  color: white;
-}
-header li {
-  display: inline-block;
-  padding: 0px 5px;
-}
-header p {
-  display: inline-block;
-}
-.heroImg {
-  background-color: #EBEBEB;
-  padding: 100px 15px;
-  height: 600px;
-  width:600px;
-}
-.content {
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: #FFFFFF;
-  text-align: center;
-}
-button {
-  padding: 15px;
-  background-color: #373738;
-  color: white;
-  font-size: 15px;
-  border-radius: 4px;
-}
-footer {
-  background-color: #373738;
-  padding: 5px;
-  color: white;
-}
-footer ul {
-  list-style: none;
-  padding-left: 5px;
-}
-footer li {
-  display: inline-block;
-  padding: 0px 7px;
-}
-.heading {
-  text-align: center;
-  padding: 15px 5px;
-  font-size: 30px;
-}
-/* My UX Skills Section */
-.flexContainer {
-  display: flex;
-  padding: 60px 30px;
-}
-.flexContainer div {
-  width: 33%;
-  padding: 25px;
-}
-
-/* My Work Section */
-.myWork {
-  padding: 60px 30px;
-  padding-top: 0;
-  background-color: #EBEBEB;
-}
-.workGrid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 350px 350px 350px;
-  grid-template-areas:
-  "img1 content1"
-  "img2 content2"
-  "img3 content3"
-  ;
-}
-.workGrid img {
-  width: 100%;
-  max-width: 250px;
-  margin: 0 auto;
-  display: block;
-}
-.img1 {
-  grid-area: img1;
-}
-.img2 {
-  grid-area: img2;
-}
-.img3 {
-  grid-area: img3;
-}
-.img1, .img2, .img3, .content1, .content2, .content3 {
-  padding: 80px;
-}
-.content1 {
-  grid-area: content1;
-}
-.content2 {
-  grid-area: content2;
-}
-.content3 {
-  grid-area: content3;
-}
+    margin: 0;
+  }
+  header {
+    background-color: #1E4147;
+    padding: 15px;
+  }
+  header ul {
+    float: right;
+    color: white;
+    font-family: Vollkorn, Arial, sans-serif;
+  }
+  
+  .work{
+    scroll-behavior: smooth;
+    display: inline-block;
+  }
+  
+  a{
+    color: white;
+  }
+  
+  header li {
+    display: inline-block;
+    padding: 0px 5px;
+    font-family: Vollkorn, Arial, sans-serif;
+  }
+  header p {
+    display: inline-block;
+    font-size: 18px;
+    color: #AAC789;
+    font-family: Vollkorn, Arial, sans-serif;
+  }
+  .heroImg {
+    background-color: #AAC789;
+    padding: 100px 15px;
+  }
+  .content {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #FFFF;
+    text-align: center;
+    font-family: Vollkorn, Arial, sans-serif;
+  }
+  button {
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    font-family: Vollkorn, Arial, sans-serif;
+  }
+  footer {
+    background-color: #AAC789;
+    padding: 5px;
+    color: white;
+    font-family: Vollkorn, Arial, sans-serif;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+    font-family: Vollkorn, Arial, sans-serif;
+    align-items: flex-start;
+  }
+  
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+    font-family: Vollkorn, Arial, sans-serif;
+  }
+  .heading {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    font-family: Vollkorn, Arial, sans-serif;
+  }
+  
+  
+  /* My Work Section */
+  .myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    background-color: #1E4147;
+    font-family: Vollkorn, Arial, sans-serif;
+    color: white;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+    "splashScreen content1"
+    "content2 deptOfed"
+    "oBC content3"
+    ;
+  }
+  .workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  .splashScreen{
+    grid-area: splashScreen;
+    height: 250px;
+    width: 130px;
+    float: right;
+    align-items: right;
+    padding-left: 200px;
+  }
+  .deptOfed {
+    grid-area: deptOfed;
+  }
+  .oBC {
+    grid-area: oBC;
+    
+  }
+  .splashScreen, .deptOfed, .oBC, .content1, .content2, .content3 {
+    padding: 80px;
+  }
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+  .content3 {
+    grid-area: content3;
+  }
+  
+  .profile {
+    height: 250px;
+    width: 250px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
